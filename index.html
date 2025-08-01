@@ -19,32 +19,32 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
         
         :root {
-            /* Colors */
-            --primary: #3b82f6;
-            --primary-dark: #2563eb;
-            --primary-light: rgba(59, 130, 246, 0.1);
+            /* SafeWayVPN Colors */
+            --primary: #4f46e5;
+            --primary-dark: #3730a3;
+            --primary-light: rgba(79, 70, 229, 0.1);
             --secondary: #10b981;
             --secondary-dark: #059669;
-            --accent: #8b5cf6;
-            --accent-dark: #7c3aed;
+            --accent: #f59e0b;
+            --accent-dark: #d97706;
             
             /* Backgrounds */
             --bg-primary: #ffffff;
-            --bg-secondary: #f8fafc;
-            --bg-tertiary: #f1f5f9;
+            --bg-secondary: #f9fafb;
+            --bg-tertiary: #f3f4f6;
             --bg-card: #ffffff;
             --bg-elevated: #ffffff;
             
             /* Text */
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --text-muted: #64748b;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --text-muted: #9ca3af;
             --text-inverse: #ffffff;
             
             /* Borders */
-            --border-light: #e2e8f0;
-            --border-medium: #cbd5e1;
-            --border-dark: #94a3b8;
+            --border-light: #e5e7eb;
+            --border-medium: #d1d5db;
+            --border-dark: #9ca3af;
             
             /* Shadows */
             --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -53,28 +53,28 @@
             --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             
-            /* Glassmorphism */
-            --glass-bg: rgba(255, 255, 255, 0.85);
-            --glass-border: rgba(255, 255, 255, 0.2);
-            --backdrop-blur: 20px;
+            /* Modern styles */
+            --glass-bg: rgba(255, 255, 255, 0.95);
+            --glass-border: rgba(255, 255, 255, 0.3);
+            --backdrop-blur: 16px;
             
             /* Gradients */
             --gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             --gradient-accent: linear-gradient(135deg, var(--accent) 0%, var(--primary) 100%);
-            --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+            --gradient-bg: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
             
             /* Spacing & Sizing */
-            --radius-sm: 8px;
-            --radius-md: 12px;
-            --radius-lg: 16px;
-            --radius-xl: 20px;
+            --radius-sm: 6px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            --radius-xl: 16px;
             --radius-full: 9999px;
             
             /* Animation */
             --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             
             /* Safe area */
             --safe-area-top: env(safe-area-inset-top);
@@ -84,22 +84,23 @@
         }
 
         .dark-theme {
-            --bg-primary: #0f172a;
-            --bg-secondary: #1e293b;
-            --bg-tertiary: #334155;
-            --bg-card: #1e293b;
-            --bg-elevated: #334155;
+            --bg-primary: #111827;
+            --bg-secondary: #1f2937;
+            --bg-tertiary: #374151;
+            --bg-card: #1f2937;
+            --bg-elevated: #374151;
             
-            --text-primary: #f1f5f9;
-            --text-secondary: #cbd5e1;
-            --text-muted: #94a3b8;
+            --text-primary: #f9fafb;
+            --text-secondary: #d1d5db;
+            --text-muted: #9ca3af;
             
-            --border-light: #334155;
-            --border-medium: #475569;
-            --border-dark: #64748b;
+            --border-light: #374151;
+            --border-medium: #4b5563;
+            --border-dark: #6b7280;
             
-            --glass-bg: rgba(30, 41, 59, 0.8);
+            --glass-bg: rgba(31, 41, 55, 0.9);
             --glass-border: rgba(255, 255, 255, 0.1);
+            --gradient-bg: linear-gradient(135deg, #1f2937 0%, #111827 100%);
         }
 
         * {
@@ -111,7 +112,7 @@
 
         body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background: var(--gradient-bg, #667eea);
+    background: var(--gradient-bg);
     color: var(--text-primary);
     position: relative;
     overflow-x: hidden;
@@ -127,15 +128,15 @@
 
 body::before {
     content: '';
-    position: absolute; /* changed from fixed */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(139, 92, 246, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(16, 185, 129, 0.05) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(79, 70, 229, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
     backface-visibility: hidden;
@@ -260,14 +261,14 @@ body::before {
 
         /* Header */
         .header {
-            background: var(--glass-bg);
-            backdrop-filter: blur(var(--backdrop-blur));
-            border-radius: var(--radius-xl);
-            border: 1px solid var(--glass-border);
-            box-shadow: var(--shadow-2xl);
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
             text-align: center;
             position: relative;
             overflow: hidden;
+            padding: 24px;
         }
 
         .header::before {
@@ -276,88 +277,103 @@ body::before {
             top: 0;
             left: 0;
             right: 0;
-            height: 3px;
-        }
-
-        .header::after {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
-            animation: headerGlow 4s ease-in-out infinite alternate;
-        }
-
-        @keyframes headerGlow {
-            0% { transform: rotate(0deg) scale(1); opacity: 0.3; }
-            100% { transform: rotate(360deg) scale(1.1); opacity: 0.1; }
+            height: 2px;
+            background: var(--gradient-primary);
         }
 
         .logo {
-    font-size: 28px;
-    font-weight: 900;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: -0.025em;
-    line-height: 1.2;
-    margin-bottom: 12px;
-    position: relative;
-    z-index: 1;
-    
-    /* Свечение вокруг текста */
-    text-shadow:
-        0 0 10px rgba(59, 130, 246, 0.6),
-        0 0 20px rgba(59, 130, 246, 0.4),
-        0 0 30px rgba(139, 92, 246, 0.3);
-    
-    /* Плавное появление эффекта при наведении */
-    transition: text-shadow 0.3s ease;
-}
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s ease;
+        }
 
-.logo:hover {
-    text-shadow:
-        0 0 15px rgba(59, 130, 246, 0.9),
-        0 0 30px rgba(59, 130, 246, 0.7),
-        0 0 45px rgba(139, 92, 246, 0.6);
-    cursor: pointer;
-}
+        .logo:hover {
+            color: var(--primary-dark);
+            cursor: pointer;
+        }
 
         .subtitle {
-            color: var(--text-primary);
-            font-size: 12px;
-            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
             opacity: 0.9;
             position: relative;
             z-index: 1;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            margin: 24px 0;
+            padding: 24px;
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (min-width: 769px) {
+            .benefits-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 24px;
+            }
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 16px;
+        }
+
+        .benefit-icon {
+            font-size: 28px;
+            margin-bottom: 8px;
+            line-height: 1;
+        }
+
+        .benefit-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .benefit-description {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.4;
         }
 
         /* Progress Bar */
         .progress-container {
-                padding: 0 4px;
-                padding-top: 10px;
-                padding-bottom: 10px;
+            padding: 0 4px;
+            padding-top: 16px;
+            padding-bottom: 16px;
         }
 
         .progress-track {
-            height: 6px;
-            background: var(--glass-bg);
+            height: 4px;
+            background: var(--border-light);
             border-radius: var(--radius-full);
             overflow: hidden;
-            backdrop-filter: blur(var(--backdrop-blur));
-            border: 1px solid var(--glass-border);
             position: relative;
         }
 
         .progress-fill {
             height: 100%;
-            background: var(--gradient-primary);
+            background: var(--primary);
             border-radius: var(--radius-full);
-            transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
         }
@@ -369,8 +385,8 @@ body::before {
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-            animation: shimmer 2s infinite;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmer 1.5s infinite;
         }
 
         @keyframes shimmer {
@@ -380,12 +396,11 @@ body::before {
 
         /* Step Container */
         .step-container {
-            background: var(--glass-bg);
-            backdrop-filter: blur(var(--backdrop-blur));
-            border-radius: var(--radius-xl);
-            border: 1px solid var(--glass-border);
-            padding: 24px;
-            box-shadow: var(--shadow-2xl);
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-light);
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
             display: none;
             position: relative;
             overflow: hidden;
@@ -397,8 +412,8 @@ body::before {
             top: 0;
             left: 0;
             right: 0;
-            height: 1px;
-            background: var(--gradient-primary);
+            height: 2px;
+            background: var(--primary);
         }
 
         .step-container.active {
@@ -420,54 +435,54 @@ body::before {
         /* Step Header */
         .step-header {
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 32px;
         }
 
         .step-number {
-            width: 50px;
-            height: 50px;
+            width: 48px;
+            height: 48px;
             border-radius: var(--radius-full);
-            background: var(--gradient-primary);
+            background: var(--primary);
             color: var(--text-inverse);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
-            font-weight: 800;
+            font-size: 18px;
+            font-weight: 700;
             margin: 0 auto 16px;
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-md);
             position: relative;
         }
 
         .step-number::after {
             content: '';
             position: absolute;
-            inset: -4px;
+            inset: -3px;
             border-radius: var(--radius-full);
-            background: var(--gradient-primary);
-            opacity: 0.3;
+            background: var(--primary);
+            opacity: 0.2;
             z-index: -1;
             animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.3; }
-            50% { transform: scale(1.1); opacity: 0.1; }
+            0%, 100% { transform: scale(1); opacity: 0.2; }
+            50% { transform: scale(1.05); opacity: 0.1; }
         }
 
         .step-title {
-            font-size: 22px;
-            font-weight: 800;
+            font-size: 24px;
+            font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 8px;
-            letter-spacing: -0.025em;
+            letter-spacing: -0.02em;
         }
 
         .step-description {
             color: var(--text-secondary);
-            font-size: 14px;
-            line-height: 1.6;
-            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 400;
         }
 
         /* Device Grid */
@@ -487,13 +502,13 @@ body::before {
 
         .device-card {
             background: var(--bg-card);
-            border: 2px solid var(--border-light);
+            border: 1px solid var(--border-light);
             border-radius: var(--radius-lg);
-            padding: 20px 12px;
+            padding: 24px 16px;
             cursor: pointer;
             transition: var(--transition-base);
             text-align: center;
-            min-height: 100px;
+            min-height: 120px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -502,36 +517,16 @@ body::before {
             overflow: hidden;
         }
 
-        .device-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: var(--gradient-card);
-            opacity: 0;
-            transition: var(--transition-base);
-        }
-
         .device-card:hover {
             border-color: var(--primary);
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: var(--shadow-xl);
-        }
-
-        .device-card:hover::before {
-            opacity: 1;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
         }
 
         .device-card.selected {
             border-color: var(--primary);
             background: var(--primary-light);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .device-card.selected::before {
-            opacity: 1;
-            background: var(--gradient-primary);
-            opacity: 0.1;
+            box-shadow: var(--shadow-md);
         }
 
         .device-icon {
@@ -1011,8 +1006,8 @@ body::before {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 6px;
-            padding: 12px 20px;
+            gap: 8px;
+            padding: 12px 24px;
             border: none;
             border-radius: var(--radius-md);
             font-size: 14px;
@@ -1021,7 +1016,7 @@ body::before {
             cursor: pointer;
             transition: var(--transition-base);
             white-space: nowrap;
-            min-height: 40px;
+            min-height: 44px;
             touch-action: manipulation;
             -webkit-appearance: none;
             position: relative;
@@ -1046,14 +1041,15 @@ body::before {
         }
 
         .btn-primary {
-            background: var(--gradient-primary);
+            background: var(--primary);
             color: var(--text-inverse);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-md);
         }
 
         .btn-primary:hover {
-            box-shadow: var(--shadow-xl);
-            transform: translateY(-2px);
+            background: var(--primary-dark);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-1px);
         }
 
         .btn-primary:disabled {
@@ -1072,13 +1068,13 @@ body::before {
         .btn-secondary {
             background: var(--bg-card);
             color: var(--text-primary);
-            border: 2px solid var(--border-light);
+            border: 1px solid var(--border-light);
         }
 
         .btn-secondary:hover {
             border-color: var(--primary);
             background: var(--primary-light);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-sm);
         }
 
         .btn-sm {
@@ -1497,6 +1493,32 @@ body::before {
             <div class="subtitle"><%= metaDescription %></div>
         </div>
 
+        <!-- Benefits Section -->
+        <div class="benefits-section">
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔒</div>
+                    <div class="benefit-title" data-key="security">Безопасность</div>
+                    <div class="benefit-description" data-key="security_desc">Современные протоколы маскировки трафика</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚡</div>
+                    <div class="benefit-title" data-key="speed">Скорость</div>
+                    <div class="benefit-description" data-key="speed_desc">Высокоскоростные соединения</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📱</div>
+                    <div class="benefit-title" data-key="compatibility">Совместимость</div>
+                    <div class="benefit-description" data-key="compatibility_desc">Все устройства и платформы</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🙈</div>
+                    <div class="benefit-title" data-key="privacy">Конфиденциальность</div>
+                    <div class="benefit-description" data-key="privacy_desc">Мы не храним ваши данные</div>
+                </div>
+            </div>
+        </div>
+
         <!-- Progress Bar -->
         <div class="progress-container">
             <div class="progress-track">
@@ -1808,7 +1830,11 @@ body::before {
                 download: 'Download', install: 'Install', or: 'or', profile: 'Profile',
                 download_install: 'Download & Install', add_subscription: 'Add Subscription', connect_use: 'Connect & Use',
                 active_servers: 'Active Servers', total_locations: 'Locations', available_locations: 'Available Locations',
-                copy_subscription_link: 'Copy Subscription Link', server_list: 'Server List'
+                copy_subscription_link: 'Copy Subscription Link', server_list: 'Server List',
+                security: 'Security', security_desc: 'Modern traffic masking protocols',
+                speed: 'Speed', speed_desc: 'High-speed connections',
+                compatibility: 'Compatibility', compatibility_desc: 'All devices and platforms',
+                privacy: 'Privacy', privacy_desc: 'We don\'t store your data'
             },
             ru: { 
                 settings: 'Настройки', theme: 'Тема', language: 'Язык', light: 'Светлая', dark: 'Темная', auto: 'Авто',
@@ -1826,7 +1852,11 @@ body::before {
                 download: 'Скачать', install: 'Установить', or: 'или', profile: 'Профиль',
                 download_install: 'Скачай', add_subscription: 'Добавь подписку', connect_use: 'Включи VPN',
                 active_servers: 'Серверов в подписке', total_locations: 'Локаций в подписке', available_locations: 'Локации',
-                copy_subscription_link: 'Скопировать ссылку подписки', server_list: 'Список серверов'
+                copy_subscription_link: 'Скопировать ссылку подписки', server_list: 'Список серверов',
+                security: 'Безопасность', security_desc: 'Современные протоколы маскировки трафика',
+                speed: 'Скорость', speed_desc: 'Высокоскоростные соединения',
+                compatibility: 'Совместимость', compatibility_desc: 'Все устройства и платформы',
+                privacy: 'Конфиденциальность', privacy_desc: 'Мы не храним ваши данные'
             },
             fa: { 
                 settings: 'تنظیمات', theme: 'تم', language: 'زبان', light: 'روشن', dark: 'تیره', auto: 'خودکار',
@@ -1844,7 +1874,11 @@ body::before {
                 download: 'دانلود', install: 'نصب', or: 'یا', profile: 'پروفایل',
                 download_install: 'دانلود و نصب', add_subscription: 'افزودن اشتراک', connect_use: 'اتصال و استفاده',
                 active_servers: 'سرورهای فعال', total_locations: 'مکان‌ها', available_locations: 'مکان‌های موجود',
-                copy_subscription_link: 'کپی لینک اشتراک', server_list: 'فهرست سرورها'
+                copy_subscription_link: 'کپی لینک اشتراک', server_list: 'فهرست سرورها',
+                security: 'امنیت', security_desc: 'پروتکل‌های مدرن پنهان‌سازی ترافیک',
+                speed: 'سرعت', speed_desc: 'اتصالات پرسرعت',
+                compatibility: 'سازگاری', compatibility_desc: 'همه دستگاه‌ها و پلتفرم‌ها',
+                privacy: 'حریم خصوصی', privacy_desc: 'ما اطلاعات شما را ذخیره نمی‌کنیم'
             }
         };
 
