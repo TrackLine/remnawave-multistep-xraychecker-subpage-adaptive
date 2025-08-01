@@ -1,0 +1,285 @@
+{
+  "ios": [
+    {
+      "id": "happ",
+      "name": "Happ",
+      "isFeatured": true,
+      "urlScheme": "happ://add/",
+      "installationStep": {
+        "buttons": [
+          {
+            "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215",
+            "buttonText": {
+              "en": "App Store [EU]",
+              "fa": "App Store [EU]",
+              "ru": "App Store [EU]"
+            }
+          },
+          {
+            "buttonLink": "https://apps.apple.com/ru/app/happ-proxy-utility-plus/id6746188973",
+            "buttonText": {
+              "en": "App Store [RU]",
+              "fa": "App Store [RU]",
+              "ru": "App Store [RU]"
+            }
+          }
+        ],
+        "description": {
+          "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+          "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+          "ru": "Откройте страницу в App Store и установите приложение. Вернись на страницу с подпиской"
+        }
+      },
+      "addSubscriptionStep": {
+        "description": {
+          "en": "Click the button below — the app will open and the subscription will be added automatically",
+          "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+          "ru": "Нажмите кнопку выше — (Подключить подписку) приложение откроется, и подписка добавится автоматически."
+        }
+      },
+      "connectAndUseStep": {
+        "description": {
+          "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+          "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+          "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов."
+        }
+      }
+    },
+    {
+      "id": "v2rayng",
+      "name": "V2RayTun",
+      "isFeatured": true,
+      "urlScheme": "v2raytun://import/",
+      "installationStep": {
+        "buttons": [
+          {
+            "buttonLink": "https://apps.apple.com/ru/app/v2raytun/id6476628951",
+            "buttonText": {
+              "en": "Open in App Store",
+              "fa": "باز کردن در App Store [EU]",
+              "ru": "App Store "
+            }
+          }
+        ],
+        "description": {
+          "en": "Open the page in App Store and install the app. Launch it, in the VPN configuration permission window click Allow and enter your passcode.",
+          "fa": "صفحه را در App Store باز کنید و برنامه را نصب کنید. آن را اجرا کنید، در پنجره مجوز پیکربندی VPN روی Allow کلیک کنید و رمز عبور خود را وارد کنید.",
+          "ru": "Откройте страницу в App Store и установите приложение. Вернись на страницу с подпиской"
+        }
+      },
+      "addSubscriptionStep": {
+        "description": {
+          "en": "Click the button below — the app will open and the subscription will be added automatically",
+          "fa": "برای افزودن خودکار اشتراک روی دکمه زیر کلیک کنید - برنامه باز خواهد شد",
+          "ru": "Нажмите кнопку выше — (Подключить подписку) приложение откроется, и подписка добавится автоматически."
+        }
+      },
+      "connectAndUseStep": {
+        "description": {
+          "en": "In the main section, click the large power button in the center to connect to VPN. Don't forget to select a server from the server list. If needed, choose another server from the server list.",
+          "fa": "در بخش اصلی، دکمه بزرگ روشن/خاموش در مرکز را برای اتصال به VPN کلیک کنید. فراموش نکنید که یک سرور را از لیست سرورها انتخاب کنید. در صورت نیاز، سرور دیگری را از لیست سرورها انتخاب کنید.",
+          "ru": "В главном разделе нажмите большую кнопку включения в центре для подключения к VPN. Не забудьте выбрать сервер в списке серверов. При необходимости выберите другой сервер из списка серверов."
+        }
+      }
+    }
+  ],
+  "android": [
+    {
+      "id": "happ",
+      "name": "Happ",
+      "isFeatured": true,
+      "urlScheme": "happ://add/",
+      "installationStep": {
+        "buttons": [
+          {
+            "buttonLink": "https://play.google.com/store/apps/details?id=com.happproxy",
+            "buttonText": {
+              "en": "Google Play",
+              "fa": "باز کردن در Google Play",
+              "ru": "Google Play"
+            }
+          },
+          {
+            "buttonLink": "https://github.com/Happ-proxy/happ-android/releases/latest/download/Happ.apk",
+            "buttonText": {
+              "en": "Download APK",
+              "fa": "دانلود APK",
+              "ru": "Скачать APK"
+            }
+          }
+        ],
+        "description": {
+          "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
+          "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
+          "ru": "Откройте страницу в Google Play и установите приложение. Или установите приложение из APK файла напрямую, если Google Play не работает."
+        }
+      },
+      "addSubscriptionStep": {
+        "description": {
+          "en": "Click the button below to add subscription",
+          "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+          "ru": "Нажмите кнопку выше — (Подключить подписку) приложение откроется, и подписка добавится автоматически."
+        }
+      },
+      "connectAndUseStep": {
+        "description": {
+          "en": "Open the app and connect to the server",
+          "fa": "برنامه را باز کنید و به سرور متصل شوید",
+          "ru": "Откройте приложение и подключитесь к серверу"
+        }
+      }
+    }
+  ],
+  "pc": [
+    {
+      "id": "v2rayng",
+      "name": "V2RayTun",
+      "isFeatured": true,
+      "urlScheme": "v2raytun://import/",
+      "installationStep": {
+        "buttons": [
+          {
+            "buttonLink": "https://github.com/v2fly/v2ray-core/releases/download/v4.31.0/v2ray-windows-64.zip",
+            "buttonText": {
+              "en": "Windows",
+              "fa": "ویندوز",
+              "ru": "Windows"
+            }
+          },
+          {
+            "buttonLink": "https://apps.apple.com/ru/app/v2raytun/id6476628951",
+            "buttonText": {
+              "en": "macOS",
+              "fa": "مک",
+              "ru": "macOS"
+            }
+          },
+          {
+            "buttonLink": "https://github.com/v2ray/dist/blob/master/v2ray-linux-64.zip",
+            "buttonText": {
+              "en": "Linux",
+              "fa": "لینوکس",
+              "ru": "Linux"
+            }
+          }
+        ],
+        "description": {
+          "en": "Choose the version for your device, click the button below and install the app.",
+          "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+          "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение."
+        }
+      },
+      "addSubscriptionStep": {
+        "description": {
+          "en": "Click the button below to add subscription",
+          "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+          "ru": "Нажмите кнопку выше — (Подключить подписку) приложение откроется, и подписка добавится автоматически."
+        }
+      },
+      "additionalAfterAddSubscriptionStep": {
+        "buttons": [],
+        "title": {
+          "en": "If the subscription is not added",
+          "fa": "اگر اشتراک در برنامه نصب نشده است",
+          "ru": "Если подписка не добавилась"
+        },
+        "description": {
+          "en": "If nothing happens after clicking the button, add the subscription manually. Click the Get Link button in the top right corner of this page, copy the link. In Clash Verge, go to the Profiles section and paste the link in the text field, then click the Import button.",
+          "fa": "اگر پس از کلیک روی دکمه اتفاقی نیفتاد، اشتراک را به صورت دستی اضافه کنید. در گوشه بالا سمت راست این صفحه روی دکمه دریافت لینک کلیک کنید، لینک را کپی کنید. در Clash Verge به بخش پروفایل‌ها بروید و لینک را در فیلد متنی وارد کنید، سپس روی دکمه وارد کردن کلیک کنید.",
+          "ru": "Если после нажатия на кнопку ничего не произошло, добавьте подписку вручную. Ниже на этой странице, отображены твои доступные сервера, напротив сервера скопируй его конфиг и импортируй в ручную в приложение"
+        }
+      },
+      "connectAndUseStep": {
+        "description": {
+          "en": "You can select a server in the Proxy section, and enable VPN in the Settings section. Set the TUN Mode switch to ON.",
+          "fa": "می‌توانید در بخش پروکسی سرور را انتخاب کنید و در بخش تنظیمات VPN را فعال کنید. کلید TUN Mode را در حالت روشن قرار دهید.",
+          "ru": "Установите переключатель TUN Mode в положение ВКЛ. Выбри сервер, подключись"
+        }
+      }
+    },
+    {
+      "id": "happ",
+      "name": "Happ",
+      "isFeatured": false,
+      "urlScheme": "happ://add/",
+      "installationStep": {
+        "buttons": [
+          {
+            "buttonLink": "https://apps.apple.com/us/app/happ-proxy-utility/id6504287215?l=ru",
+            "buttonText": {
+              "en": "Mac Os",
+              "fa": "Mac Os",
+              "ru": "Mac Os"
+            }
+          },
+          {
+            "buttonLink": "https://github.com/Happ-proxy/happ-desktop/releases/latest/download/setup-Happ.x86.exe",
+            "buttonText": {
+              "en": "Windows",
+              "fa": "Windows",
+              "ru": "Windows"
+            }
+          }
+        ],
+        "description": {
+          "en": "Choose the version for your device, click the button below and install the app.",
+          "fa": "نسخه مناسب برای دستگاه خود را انتخاب کنید، دکمه زیر را فشار دهید و برنامه را نصب کنید",
+          "ru": "Выберите подходящую версию для вашего устройства, нажмите на кнопку ниже и установите приложение"
+        }
+      },
+      "addSubscriptionStep": {
+        "description": {
+          "en": "Click the button below to add subscription",
+          "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+          "ru": "Нажмите кнопку выше — (Подключить подписку) приложение откроется, и подписка добавится автоматически."
+        }
+      },
+      "connectAndUseStep": {
+        "description": {
+          "en": "You can select a server",
+          "fa": "می‌توانید در بخش پروکسی سرور را انتخاب کنید و در بخش تنظیمات VPN را فعال کنید. کلید TUN Mode را در حالت روشن قرار دهید.",
+          "ru": "Выберете локацию, включить VPN"
+        }
+      }
+    }
+  ],
+  "tv": [
+    {
+      "id": "vpn4tv",
+      "name": "VPN4TV",
+      "isFeatured": true,
+      "urlScheme": "",
+      "installationStep": {
+        "buttons": [
+          {
+            "buttonLink": "https://play.google.com/store/apps/details?id=com.vpn4tv.hiddify",
+            "buttonText": {
+              "en": "Google Play",
+              "fa": "باز کردن در Google Play",
+              "ru": "Google Play"
+            }
+          }
+        ],
+        "description": {
+          "en": "Open the page in Google Play and install the app. Or install the app directly from the APK file if Google Play is not working.",
+          "fa": "صفحه را در Google Play باز کنید و برنامه را نصب کنید. یا برنامه را مستقیماً از فایل APK نصب کنید، اگر Google Play کار نمی کند.",
+          "ru": "Откройте страницу в Google Play и установите приложение"
+        }
+      },
+      "addSubscriptionStep": {
+        "description": {
+          "en": "Click the button below to add subscription",
+          "fa": "برای افزودن اشتراک روی دکمه زیر کلیک کنید",
+          "ru": "Нажмите кнопку выше — (Скопировать ссылку подписки) ты скопируешь свою подписку, далее на телевизоре открой VPN4TV, следуя инструкция передай telegram боту ссылку, которую ты скопировал"
+        }
+      },
+      "connectAndUseStep": {
+        "description": {
+          "en": "Open the app and connect to the server",
+          "fa": "برنامه را باز کنید و به سرور متصل شوید",
+          "ru": "Приложение автоматически обновится и загрузит нужные конфиги на твой телевизор, подключай VPN"
+        }
+      }
+    }
+  ]
+}
